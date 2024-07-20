@@ -15,6 +15,7 @@
         body {
             width: 100%;
             height: 100vh;
+            background-color: #F7DCB9;
         }
 
         .nav {
@@ -23,7 +24,7 @@
             display: flex;
             width: 100%;
             height: 10vh;
-            background-color: maroon;
+            background-color: #DEAC80;
             justify-content: space-between;
         }
 
@@ -40,13 +41,13 @@
             position: relative;
             width: 100%;
             height: 12rem;
-            background-color: black;
+            background-color: #914F1E;
         }
 
         #thumbnail {
             width: 100%;
             height: 12rem;
-            background-color: black;
+            background-color: #914F1E;
             border-radius: 12%;
         }
 
@@ -58,28 +59,35 @@
             color: white;
             width: 50%;
             height: 12rem;
-            background-color: black;
+            background-color: #914F1E;
         }
 
         #photo {
             border-radius: 12%;
             position: absolute;
-            top: 0;
+            top: -15px;
             right: 3rem;
             color: white;
             width: 18rem;
             height: 24rem;
-            background-color: plum;
+            background-color: #B5C18E;
+            /* background-color: #DEAC80; */
+            /* background-color: #914F1E; */
+
+
         }
 
         #thumbnail img {
             width: 100%;
             height: 12rem;
             object-fit: contain;
+            /* border-radius: 30% 30% 0 00%; */
+            
         }
 
         #price {
-            color: black;
+            margin-top: 0.6rem;
+            color: #914F1E;
             border-radius: 12%;
             text-transform: capitalize;
             font-size: 3rem;
@@ -88,20 +96,18 @@
             align-items: center;
             width: 100%;
             height: 8rem;
-            /* background-color: black; */
+            background-color: #DEAC80;
         }
 
         .pay {
-
-
             padding: 1rem;
             margin-top: 2rem;
-            /* margin-left: 1.7rem; */
             margin-left: 2rem;
-            /* margin-right: a; */
             width: 20rem;
             height: 22rem;
-            /* background-color: gray; */
+            background-color: #B5C18E;
+            /* background-color: #DEAC80; */
+
         }
 
         #qr {
@@ -109,7 +115,6 @@
             margin-right: auto;
             width: 10rem;
             height: 10rem;
-            /* background-color: black; */
         }
 
         #qr img {
@@ -124,33 +129,10 @@
             margin-right: auto;
             width: 80%;
             height: 8rem;
-            /* background-color: red; */
         }
 
-        #upi1 {
-            font-size: x-large;
-            padding-top: 0.4rem;
-            text-align: center;
-            margin-top: 1rem;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-            height: 2rem;
-            /* background-color: green; */
-        }
-
-        #upi2 {
-            font-size: x-large;
-            padding-top: 0.4rem;
-            text-align: center;
-            margin-top: 1rem;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-            height: 2rem;
-            /* background-color: blue; */
-        }
-
+        #upi1,
+        #upi2,
         #upi3 {
             font-size: x-large;
             padding-top: 0.4rem;
@@ -160,9 +142,8 @@
             margin-right: auto;
             width: 100%;
             height: 2rem;
-            /* background-color: yellow; */
+            color: #914F1E;
         }
-
 
         form {
             border-radius: 10px;
@@ -172,31 +153,41 @@
             left: 35rem;
             width: 20rem;
             height: 25rem;
-            /* background-color: red; */
-            border: 1px solid black;
-            box-shadow: 2px 2px 6px black;
+            background-color: #DEAC80;
+            border: 1px solid #914F1E;
+            box-shadow: 2px 2px 6px #914F1E;
         }
 
         #pre {
             margin-bottom: 0.5rem;
+            color: #914F1E;
         }
 
-        input {
+        input,
+        textarea {
             text-transform: capitalize;
             padding-left: 1rem;
             width: 80%;
             height: 10%;
             margin-bottom: 2rem;
-
+            border: 1px solid #914F1E;
+            border-radius: 5px;
         }
 
         #textarea {
-            padding-left: 1rem;
-            padding-right: 1rem;
-            width: 80%;
             height: 7rem;
-            margin-bottom: 2rem;
+        }
 
+        button {
+            position: relative;
+            left: 8rem;
+            bottom: 1.7rem;
+            padding: 0.5rem 1rem;
+            background-color: #914F1E;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
         @media (min-width:375px) and (max-width:812px) {
@@ -208,7 +199,7 @@
                 position: relative;
                 width: 100%;
                 height: 6rem;
-                background-color: black;
+                background-color: #914F1E;
                 border-radius: 12%;
             }
 
@@ -220,24 +211,23 @@
                 color: white;
                 width: 100%;
                 height: 6rem;
-                background-color: black;
+                background-color: #914F1E;
             }
 
             #photo {
                 border-radius: 12%;
-                /* position:absolute; */
                 top: 7rem;
                 right: 3rem;
                 color: white;
                 width: 18rem;
                 height: 22.5rem;
-                background-color: plum;
+                background-color: transparent;
             }
 
             #thumbnail {
                 width: 100%;
                 height: 12rem;
-                background-color: black;
+                background-color: #914F1E;
                 border-radius: 12%;
             }
 
@@ -249,7 +239,7 @@
             }
 
             #price {
-                color: black;
+                color: #914F1E;
                 border-radius: 12%;
                 text-transform: capitalize;
                 font-size: 3rem;
@@ -258,20 +248,17 @@
                 align-items: center;
                 width: 100%;
                 height: 8rem;
-                /* background-color: black; */
+                background-color: #DEAC80;
             }
 
             .pay {
-
-
                 padding: 1rem;
                 margin-top: 24rem;
-                /* margin-left: 1.7rem; */
                 margin-left: auto;
                 margin-right: auto;
                 width: 20rem;
                 height: 22rem;
-                /* background-color: gray; */
+                background-color: #B5C18E;
             }
 
             #qr {
@@ -279,7 +266,6 @@
                 margin-right: auto;
                 width: 10rem;
                 height: 10rem;
-                /* background-color: black; */
             }
 
             #qr img {
@@ -294,33 +280,10 @@
                 margin-right: auto;
                 width: 80%;
                 height: 8rem;
-                /* background-color: red; */
             }
 
-            #upi1 {
-                font-size: x-large;
-                padding-top: 0.4rem;
-                text-align: center;
-                margin-top: 1rem;
-                margin-left: auto;
-                margin-right: auto;
-                width: 100%;
-                height: 2rem;
-                /* background-color: green; */
-            }
-
-            #upi2 {
-                font-size: x-large;
-                padding-top: 0.4rem;
-                text-align: center;
-                margin-top: 1rem;
-                margin-left: auto;
-                margin-right: auto;
-                width: 100%;
-                height: 2rem;
-                /* background-color: blue; */
-            }
-
+            #upi1,
+            #upi2,
             #upi3 {
                 font-size: x-large;
                 padding-top: 0.4rem;
@@ -330,42 +293,54 @@
                 margin-right: auto;
                 width: 100%;
                 height: 2rem;
-                /* background-color: yellow; */
+                color: #914F1E;
             }
 
             form {
                 border-radius: 10px;
                 padding: 2rem;
                 position: absolute;
-                top: 56rem;
+                top: 59rem;
                 left: 1.7rem;
                 width: 20rem;
-                height: 25rem;
-                /* background-color: red; */
-                border: 1px solid black;
-                box-shadow: 2px 2px 6px black;
+                height: 26rem;
+                background-color: #DEAC80;
+                border: 1px solid #914F1E;
+                box-shadow: 2px 2px 6px #914F1E;
             }
 
             #pre {
                 margin-bottom: 0.5rem;
+                color: #914F1E;
             }
 
-            input {
+            input,
+            textarea {
                 text-transform: capitalize;
                 padding-left: 1rem;
                 width: 80%;
                 height: 10%;
                 margin-bottom: 2rem;
-
+                border: 1px solid #914F1E;
+                border-radius: 5px;
             }
 
             #textarea {
-                width: 80%;
                 height: 7rem;
-                margin-bottom: 2rem;
-
             }
 
+            #sbmt {
+               margin-top: 0.2rem;
+                position: relative;
+                left: 8rem;
+                bottom: 1.5rem;
+                padding: 0.5rem 1rem;
+                background-color: #914F1E;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
         }
     </style>
 </head>
@@ -374,8 +349,7 @@
     <nav>
         <div class="nav">
             <div id="logo"></div>
-            <ul>
-
+            <ul></ul>
         </div>
     </nav>
     <div class="banner">
@@ -397,28 +371,27 @@
 
     <form method="post" name="google-sheet">
         <p id="pre">
-            After Payment Enter Name,Number and <b>Submit</b>
+            After Payment Enter Name, Number and <b>Submit</b>
         </p>
         Name:- <input type="text" name="name" required placeholder="ex:rohit">
-        Phone:- <input type="number" name="number" maxlength="10" minlength="9" required placeholder="ex:+91 0123456789">
-        <textarea name="textarea" required placeholder="If Your Payment done Then Write Y otherwise N" id="textarea"
+        Phone:- <input type="number" name="number" maxlength="10" minlength="9" required
+            placeholder="ex:+91 0123456789">
+        <textarea name="textarea" required placeholder="If Your Payment is successful Then Write Yes Otherwise No" id="textarea"
             maxlength="3" minlength="2"></textarea>
-        <button type="submit" name="submit">Submit</button>
+        <button id="sbmt" type="submit" name="submit">Submit</button>
     </form>
 
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwYrnHpGo0rlhI_cQbaaBwriFG-HZIsmJj9YtAZNGOpp7YAPvElmBhBx20SO57xDhv0OA/exec'
         const form = document.forms['google-sheet']
-      
+
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Course purchased successfully..! We Will Contact You Soon..."))
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Course purchased successfully..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
         })
-      </script>
-
-
+    </script>
 </body>
 
 </html>
