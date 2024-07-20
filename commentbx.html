@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Mode</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .nav {
+            padding-left: 2vh;
+            padding-right: 2vh;
+            display: flex;
+            width: 100%;
+            height: 10vh;
+            background-color: maroon;
+            justify-content: space-between;
+        }
+
+        #logo {
+            background-image: url("https://img.freepik.com/premium-vector/trading-logo-with-chart-concept_11481-675.jpg");
+            background-size: cover;
+            width: 10vh;
+            height: 10vh;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 12rem;
+            background-color: black;
+        }
+
+        #thumbnail {
+            width: 100%;
+            height: 12rem;
+            background-color: black;
+            border-radius: 12%;
+        }
+
+        #para {
+            font-size: 1.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            width: 50%;
+            height: 12rem;
+            background-color: black;
+        }
+
+        #photo {
+            border-radius: 12%;
+            position: absolute;
+            top: 0;
+            right: 3rem;
+            color: white;
+            width: 18rem;
+            height: 24rem;
+            background-color: plum;
+        }
+
+        #thumbnail img {
+            width: 100%;
+            height: 12rem;
+            object-fit: contain;
+        }
+
+        #price {
+            color: black;
+            border-radius: 12%;
+            text-transform: capitalize;
+            font-size: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 8rem;
+            /* background-color: black; */
+        }
+
+        .pay {
+
+
+            padding: 1rem;
+            margin-top: 2rem;
+            /* margin-left: 1.7rem; */
+            margin-left: 2rem;
+            /* margin-right: a; */
+            width: 20rem;
+            height: 22rem;
+            /* background-color: gray; */
+        }
+
+        #qr {
+            margin-left: auto;
+            margin-right: auto;
+            width: 10rem;
+            height: 10rem;
+            /* background-color: black; */
+        }
+
+        #qr img {
+            width: 10rem;
+            height: 10rem;
+            object-fit: cover;
+        }
+
+        #upi {
+            margin-top: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            height: 8rem;
+            /* background-color: red; */
+        }
+
+        #upi1 {
+            font-size: x-large;
+            padding-top: 0.4rem;
+            text-align: center;
+            margin-top: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: 2rem;
+            /* background-color: green; */
+        }
+
+        #upi2 {
+            font-size: x-large;
+            padding-top: 0.4rem;
+            text-align: center;
+            margin-top: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: 2rem;
+            /* background-color: blue; */
+        }
+
+        #upi3 {
+            font-size: x-large;
+            padding-top: 0.4rem;
+            text-align: center;
+            margin-top: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: 2rem;
+            /* background-color: yellow; */
+        }
+
+
+        form {
+            border-radius: 10px;
+            padding: 2rem;
+            position: absolute;
+            top: 19rem;
+            left: 35rem;
+            width: 20rem;
+            height: 25rem;
+            /* background-color: red; */
+            border: 1px solid black;
+            box-shadow: 2px 2px 6px black;
+        }
+
+        #pre {
+            margin-bottom: 0.5rem;
+        }
+
+        input {
+            text-transform: capitalize;
+            padding-left: 1rem;
+            width: 80%;
+            height: 10%;
+            margin-bottom: 2rem;
+
+        }
+
+        #textarea {
+            padding-left: 1rem;
+            width: 80%;
+            height: 7rem;
+            margin-bottom: 2rem;
+
+        }
+
+        @media (min-width:375px) and (max-width:812px) {
+            ul li {
+                display: none;
+            }
+
+            .banner {
+                position: relative;
+                width: 100%;
+                height: 6rem;
+                background-color: black;
+                border-radius: 12%;
+            }
+
+            #para {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 0.8rem;
+                color: white;
+                width: 100%;
+                height: 6rem;
+                background-color: black;
+            }
+
+            #photo {
+                border-radius: 12%;
+                /* position:absolute; */
+                top: 7rem;
+                right: 3rem;
+                color: white;
+                width: 18rem;
+                height: 22.5rem;
+                background-color: plum;
+            }
+
+            #thumbnail {
+                width: 100%;
+                height: 12rem;
+                background-color: black;
+                border-radius: 12%;
+            }
+
+            #thumbnail img {
+                width: 100%;
+                height: 12rem;
+                object-fit: contain;
+                border-radius: 12%;
+            }
+
+            #price {
+                color: black;
+                border-radius: 12%;
+                text-transform: capitalize;
+                font-size: 3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 8rem;
+                /* background-color: black; */
+            }
+
+            .pay {
+
+
+                padding: 1rem;
+                margin-top: 24rem;
+                /* margin-left: 1.7rem; */
+                margin-left: auto;
+                margin-right: auto;
+                width: 20rem;
+                height: 22rem;
+                /* background-color: gray; */
+            }
+
+            #qr {
+                margin-left: auto;
+                margin-right: auto;
+                width: 10rem;
+                height: 10rem;
+                /* background-color: black; */
+            }
+
+            #qr img {
+                width: 10rem;
+                height: 10rem;
+                object-fit: cover;
+            }
+
+            #upi {
+                margin-top: 1rem;
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+                height: 8rem;
+                /* background-color: red; */
+            }
+
+            #upi1 {
+                font-size: x-large;
+                padding-top: 0.4rem;
+                text-align: center;
+                margin-top: 1rem;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                height: 2rem;
+                /* background-color: green; */
+            }
+
+            #upi2 {
+                font-size: x-large;
+                padding-top: 0.4rem;
+                text-align: center;
+                margin-top: 1rem;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                height: 2rem;
+                /* background-color: blue; */
+            }
+
+            #upi3 {
+                font-size: x-large;
+                padding-top: 0.4rem;
+                text-align: center;
+                margin-top: 1rem;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                height: 2rem;
+                /* background-color: yellow; */
+            }
+
+            form {
+                border-radius: 10px;
+                padding: 2rem;
+                position: absolute;
+                top: 56rem;
+                left: 1.7rem;
+                width: 20rem;
+                height: 25rem;
+                /* background-color: red; */
+                border: 1px solid black;
+                box-shadow: 2px 2px 6px black;
+            }
+
+            #pre {
+                margin-bottom: 0.5rem;
+            }
+
+            input {
+                text-transform: capitalize;
+                padding-left: 1rem;
+                width: 80%;
+                height: 10%;
+                margin-bottom: 2rem;
+
+            }
+
+            #textarea {
+                width: 80%;
+                height: 7rem;
+                margin-bottom: 2rem;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav">
+            <div id="logo"></div>
+            <ul>
+
+        </div>
+    </nav>
+    <div class="banner">
+        <div id="para"><b>Complete Stock Trading course-Zero to Hero in 12 Hour</b></div>
+        <div id="photo">
+            <div id="thumbnail"><img src="https://i.ytimg.com/vi/h8-qemIbXbo/maxresdefault.jpg" alt="thumbnail">
+                <div id="price">price:- <b>₹799</b></div>
+            </div>
+        </div>
+    </div>
+    <div class="pay">
+        <div id="qr"><img src="Screenshot_20240720_135756_Gallery.jpg" alt="qr"></div>
+        <div id="upi">
+            <div id="upi1"><b>7050246562@ybl</b></div>
+            <div id="upi2"><b>7050246562@ibl</b></div>
+            <div id="upi3"><b>7050246562@axl</b></div>
+        </div>
+    </div>
+
+    <form method="post" name="google-sheet">
+        <p id="pre">
+            After Payment Enter Name,Number and <b>Submit</b>
+        </p>
+        Name:- <input type="text" name="name" required placeholder="ex:rohit">
+        Phone:- <input type="number" name="number" maxlength="10" minlength="9" required placeholder="ex:+91 0123456789">
+        <textarea name="textarea" required placeholder="If Your Payment done Then Write Y oStherwise N" id="textarea"
+            maxlength="3" minlength="2"></textarea>
+        <button type="submit" name="submit">Submit</button>
+    </form>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwYrnHpGo0rlhI_cQbaaBwriFG-HZIsmJj9YtAZNGOpp7YAPvElmBhBx20SO57xDhv0OA/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Course purchased successfully..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+
+</body>
+
+</html>
