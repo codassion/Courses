@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>www.Cheap Courses.com</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: white;
+    }
+
+    .nav {
+      padding-left: 2vh;
+      padding-right: 2vh;
+      display: flex;
+      width: 100%;
+      height: 10vh;
+      background-color: maroon;
+      justify-content: space-between;
+    }
+
+    #logo {
+      background-image: url("https://img.freepik.com/premium-vector/trading-logo-with-chart-concept_11481-675.jpg");
+      background-size: cover;
+      width: 10vh;
+      height: 10vh;
+      background-color: white;
+      border-radius: 50%;
+    }
+
+    ul {
+      /* justify-content: center; */
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      width: 20vh;
+      height: 10vh;
+      /* background-color: purple; */
+      list-style-type: none;
+    }
+
+    ul span{
+      display: none;
+    }
+
+    li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.3rem;
+    }
+
+    li a:hover {
+      color: red;
+      text-decoration: none;
+      font-size: 1.3rem;
+    }
+
+    .banner {
+      width: 100vw;
+      height: 40vh;
+      /* background-color: orange; */
+      background-image: url("https://img.freepik.com/free-photo/glowing-blue-pulse-trace-computer-monitor-symbolizes-healthy-heartbeat-generated-by-ai_188544-56200.jpg?t=st=1721402213~exp=1721405813~hmac=fa130c040ccfd5af32b7a044c07aed2d2034b8ab58e2c0ee54d3c22086bcb1b5&w=1060");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding-top: 2em;
+
+      text-align: center;
+
+    }
+
+    h1 {
+      color: white;
+      font-size: 60px;
+      font-family: sans-serif;
+
+    }
+
+    .banner p {
+      color: white;
+      margin-bottom: 1rem;
+      word-spacing: 2rem;
+
+    }
+
+    .banner button {
+      width: 8rem;
+      height: 2rem;
+      background-color: orange;
+      color: white;
+
+    }
+
+    h2 {
+      margin-top: 1rem;
+      text-align: center;
+      width: 100%;
+      height: 3rem;
+      /* background-color: red; */
+      word-spacing: 0.6rem;
+    }
+
+    #green {
+      color: green;
+    }
+
+    #red {
+      color: red;
+    }
+
+    #black {
+      color: black;
+    }
+
+    .courses {
+      padding: 1rem;
+      gap: 1rem;
+      border: 1px solid green;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .course {
+      padding-top: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      width: 20rem;
+      height: 30rem;
+      background-color: red;
+     
+    }
+
+    #thumbnail {
+      
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      width: 18rem;
+      height: 12rem;
+      background-color: black;
+      
+      
+      
+    }
+    #thumbnail img{
+      width: 18rem;
+      height: 12rem;
+      object-fit: contain;
+    }
+
+    #title {
+      text-align: center;
+      width: 100%;
+      height: 2rem;
+      background-color: white;
+      margin-bottom: 1rem;
+      border: 1px solid black;
+      color: black;
+      font-size: 14px;
+    }
+
+    #para {
+      text-align: center;
+      color: black;
+      width: 100%;
+      height: 4rem;
+      background-color: white;
+      border: 1px solid black;
+      margin-bottom: 1rem;
+      font-size: 14px;
+    }
+
+    #price {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* padding-top: 0.4rem; */
+      text-align: center;
+      width: 100%;
+      height: 2rem;
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+    }
+    
+    #price a{
+      text-decoration: none;
+    }
+
+    footer {
+      /* flex-wrap: wrap; */
+      padding-left: 1rem;
+      padding-right: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* width: 100%; */
+      height: 4rem;
+      background-color: black;
+      color: white;
+    }
+
+    @media (min-width:375px) and (max-width:812px) {
+      .nav {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        padding-left: 2vh;
+        padding-right: 2vh;
+        width: 100%;
+        height: 5vh;
+        margin-bottom: 0.3rem;
+
+      }
+
+      #logo {
+        margin-top: 0.4rem;
+        background-image: url("https://img.freepik.com/premium-vector/trading-logo-with-chart-concept_11481-675.jpg");
+        background-size: cover;
+        width: 5vh;
+        height: 5vh;
+        background-color: red;
+        border-radius: 50%;
+      }
+
+      ul {
+        align-items: center;
+        /* justify-content: center; */
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        width: 19vh;
+        height: 5vh;
+        /* background-color: purple; */
+        list-style-type: none;
+      }
+
+      ul span{
+        display: contents;
+      }
+
+      li {
+        color: black;
+        text-decoration: none;
+        font-size: 1rem;
+        display: none;
+      }
+
+      h1 {
+        color: white;
+        font-size: 50px;
+        font-family: sans-serif;
+
+      }
+
+      .banner {
+        padding-top: 4rem;
+      }
+
+      .banner p {
+        padding-top: 1rem;
+        color: white;
+        margin-bottom: 1rem;
+        word-spacing: 1rem;
+
+      }
+
+      .courses {
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 1rem;
+        border: 1px solid green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex-wrap: wrap; */
+      }
+
+      .course {
+        border: 1px solid black;
+        width: 30rem;
+        height: 21rem;
+        background-color: white;
+      }
+
+
+      #thumbnail {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 8rem;
+        background-color: black;
+      }
+
+      #thumbnail img{
+      width: 18rem;
+      height: 8rem;
+      object-fit: contain;
+    }
+
+
+      footer span{
+        font-size: 0.8rem;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <div id="logo"></div>
+    <ul>
+      <span>Black Rock Strategy</span>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Courses</a></li>
+    </ul>
+  </div>
+
+
+  <div class="banner">
+    <h1>Learn Anytime,<br>Anywhere</h1>
+    <p>Join millions of learners around the world</p>
+    <button>Explore Courses</button>
+  </div>
+
+  <h2><span id="green">Black</span> <span id="red">Rock</span> <span id="black">Strategy</span></h2>
+  <div class="courses">
+
+    <div id="course1" class="course">
+      <div id="thumbnail"><img src="https://i.ytimg.com/vi/h8-qemIbXbo/maxresdefault.jpg" alt="thumbnail"></div>
+      <div id="title"><b>Complete Stock Trading course-Zero to Hero in 12 Hour</b></div>
+      <p id="para">Intraday Stock <b>Trading,</b> Price Action Stock <b>Trading,</b> Indicator baased Stock <b>trading,</b> Financial Markets</p>
+      <div id="price"><button type="submit"><a href="commentbx.html" target="main">Buy Now:- <b>₹799</b></a></button></div>
+    </div>
+    <div id="course2" class="course">
+      <div id="thumbnail"><img src="https://i.ytimg.com/vi/h8-qemIbXbo/maxresdefault.jpg" alt="thumbnail"></div>
+      <div id="title"><b>Complete Stock Trading course-Zero to Hero in 12 Hour</b></div>
+      <p id="para">Intraday Stock <b>Trading,</b> Price Action Stock <b>Trading,</b> Indicator baased Stock <b>trading,</b> Financial Markets</p>
+      <div id="price"><button type="submit"><a href="#">Buy Now:- <b>₹799</b></a></button></div>
+    </div>
+    <div id="course3" class="course">
+      <div id="thumbnail"><img src="https://i.ytimg.com/vi/h8-qemIbXbo/maxresdefault.jpg" alt="thumbnail"></div>
+      <div id="title"><b>Complete Stock Trading course-Zero to Hero in 12 Hour</b></div>
+      <p id="para">Intraday Stock <b>Trading,</b> Price Action Stock <b>Trading,</b> Indicator baased Stock <b>trading,</b> Financial Markets</p>
+      <div id="price"><button type="submit"><a href="#">Buy Now:- <b>₹799</b></a></button></div>
+    </div>
+    <div id="course4" class="course">
+      <div id="thumbnail"><img src="https://i.ytimg.com/vi/h8-qemIbXbo/maxresdefault.jpg" alt="thumbnail"></div>
+      <div id="title"><b>Complete Stock Trading course-Zero to Hero in 12 Hour</b></div>
+      <p id="para">Intraday Stock <b>Trading,</b> Price Action Stock <b>Trading,</b> Indicator baased Stock <b>trading,</b> Financial Markets</p>
+      <div id="price"><button type="submit"><a href="#">Buy Now:- <b>₹799</b></a></button></div>
+    </div>
+    <div id="course5" class="course">
+      <div id="thumbnail"><img src="https://i.ytimg.com/vi/h8-qemIbXbo/maxresdefault.jpg" alt="thumbnail"></div>
+      <div id="title"><b>Complete Stock Trading course-Zero to Hero in 12 Hour</b></div>
+      <p id="para">Intraday Stock <b>Trading,</b> Price Action Stock <b>Trading,</b> Indicator baased Stock <b>trading,</b> Financial Markets</p>
+      <div id="price"><button type="submit"><a href="#">Buy Now:- <b>₹799</b></a></button></div>
+    </div>
+    <div id="course6" class="course">
+      <div id="thumbnail"><img src="https://i.ytimg.com/vi/h8-qemIbXbo/maxresdefault.jpg" alt="thumbnail"></div>
+      <div id="title"><b>Complete Stock Trading course-Zero to Hero in 12 Hour</b></div>
+      <p id="para">Intraday Stock <b>Trading,</b> Price Action Stock <b>Trading,</b> Indicator baased Stock <b>trading,</b> Financial Markets</p>
+      <div id="price"><button type="submit"><a href="#">Buy Now:- <b>₹799</b></a></button></div>
+    </div>
+    <div id="course7" class="course">
+      <div id="thumbnail"><img src="https://i.ytimg.com/vi/h8-qemIbXbo/maxresdefault.jpg" alt="thumbnail"></div>
+      <div id="title"><b>Complete Stock Trading course-Zero to Hero in 12 Hour</b></div>
+      <p id="para">Intraday Stock <b>Trading,</b> Price Action Stock <b>Trading,</b> Indicator baased Stock <b>trading,</b> Financial Markets</p>
+      <div id="price"><button type="submit"><a href="#">Buy Now:- <b>₹799</b></a></button></div>
+    </div>
+    <div id="course8" class="course">
+      <div id="thumbnail"><img src="https://i.ytimg.com/vi/h8-qemIbXbo/maxresdefault.jpg" alt="thumbnail"></div>
+      <div id="title"><b>Complete Stock Trading course-Zero to Hero in 12 Hour</b></div>
+      <p id="para">Intraday Stock <b>Trading,</b> Price Action Stock <b>Trading,</b> Indicator baased Stock <b>trading,</b> Financial Markets</p>
+      <div id="price"><button type="submit"><a href="#">Buy Now:- <b>₹799</b></a></button></div>
+    </div>
+
+
+  </div>
+  <footer>
+    <span id="copyright">Copyright&copy; 2023-2024 Black rock Strategy</span>
+    <span id="love">Made with &hearts;</span>
+  </footer>
+</body>
+
+</html>
